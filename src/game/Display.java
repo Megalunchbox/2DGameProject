@@ -9,7 +9,7 @@ public class Display {
 
 	private JFrame display;
 	int width, height;
-	String title;
+	public String title;
 	private Canvas displaycanvas;
 	
 	
@@ -19,7 +19,7 @@ public class Display {
 		
 		this.width = width;
 		this.height = height;
-		
+		this.title = title;
 		createDisplay();
 		
 	}
