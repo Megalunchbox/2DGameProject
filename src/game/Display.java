@@ -37,6 +37,8 @@ public class Display {
 		displaycanvas.setMinimumSize(new Dimension(width,height));
 		displaycanvas.setMaximumSize(new Dimension(width,height));
 		
+		display.add(displaycanvas);
+		display.pack();
 		
 		
 	}
