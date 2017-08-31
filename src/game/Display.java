@@ -19,11 +19,12 @@ public class Display {
 	
 	private void createDisplay() {
 		
-		display = new JFrame();
+		display = new JFrame(title);
 		display.setSize(width, height);
 		display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		display.setResizable(false);
 		display.setLocationRelativeTo(null);
+		display.setVisible(true);
 		
 	}
 	
