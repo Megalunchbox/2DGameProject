@@ -5,7 +5,7 @@ public class Game implements Runnable{
 	public int width, height;
 	private Thread gameThread;
 	public String threadname;
-	
+	boolean program_running;
 	
 	public Game(String title, int width, int height) {
 		
@@ -20,9 +20,59 @@ public class Game implements Runnable{
 
 
 	
-	public void run() {
+public synchronized void startThread() { 
+	
+	gameThread = new Thread();
+	
+	gameThread.start();
+	
+	program_running = true;
+}
+
+public synchronized void stopThread() {
 	
 	
+	if (program_running = true) {
+		
+		return;
+	}
+	
+	try {
+		gameThread.join();
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+	
+	
+	
+}
+
+
+private void render() { 
+	
+	
+
+}
+
+
+private void init() {
+	
+	
+	
+}
+
+private void tick() {
+	
+	
+	
+	
+}
+	
+public void run() {
+	
+	init();
+	
+	tick();
 
 
 		
