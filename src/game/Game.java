@@ -4,12 +4,25 @@ import display.Display;
 
 public class Game implements Runnable{
 
-	public int width, height;
+	public final int WIDTH, HEIGHT;
 	private Thread gameThread;
 	public String threadname;
 	boolean program_running;
 	String title;
 	
+<<<<<<< HEAD
+=======
+	public Game(String title, final int WIDTH, final int HEIGHT) {
+		
+		this.WIDTH = WIDTH;
+		this.HEIGHT = HEIGHT;
+		
+		@SuppressWarnings("unused")
+		Display displayer = new Display(title, WIDTH, HEIGHT);
+		
+	}
+
+>>>>>>> origin/master
 
 	
 public synchronized void startThread() { 
@@ -33,7 +46,12 @@ public synchronized void stopThread() {
 		gameThread.join();
 	} catch (InterruptedException e) {
 		e.printStackTrace();
+<<<<<<< HEAD
 		System.out.println("error in main game thread");
+=======
+		System.out.println("main thread exception!");
+		gameThread.sleep(1000);
+>>>>>>> origin/master
 	}
 	
 	
