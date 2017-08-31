@@ -1,6 +1,7 @@
-package game;
+package launcher;
 
 import display.Display;
+import game.Game;
 
 public class Main {
 

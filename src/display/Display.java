@@ -2,6 +2,8 @@ package display;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
+
+
 import javax.swing.JFrame;
 
 
@@ -15,25 +17,26 @@ public class Display {
 	private Canvas displaycanvas;
 	
 	
-
-	
-	
-	
-	
-	
-	
-	
-	public int getWidth(int width) {
+	public Canvas getCanvas() {
 		
-		this.width = width;
+		return displaycanvas;
+		
+		
+	}
+	
+	
+	
+	public int getWidth() {
+		
+		int width = 500;
 		return width;
 		
 	}
 	
-	public int getHeight(int height) {
+	public int getHeight() {
 		
-		this.height = height;
-		return width;
+		int height = 500;
+		return height;
 		
 	}
 	
@@ -50,8 +53,8 @@ public class Display {
 	
 	private void createDisplay() {
 		
-		getWidth(500);
-		getHeight(500);
+		int height = getWidth();
+		int width = getHeight();
 		
 		display = new JFrame(title);
 		display.setSize(width, height);
