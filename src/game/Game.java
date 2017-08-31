@@ -2,18 +2,18 @@ package game;
 
 public class Game implements Runnable{
 
-	public final int width, height;
+	public final int WIDTH, HEIGHT;
 	private Thread gameThread;
 	public String threadname;
 	boolean program_running;
 	
-	public Game(String title, final int width, final int height) {
+	public Game(String title, final int WIDTH, final int HEIGHT) {
 		
-		this.width = width;
-		this.height = height;
+		this.WIDTH = WIDTH;
+		this.HEIGHT = HEIGHT;
 		
 		@SuppressWarnings("unused")
-		Display displayer = new Display(title, width, height);
+		Display displayer = new Display(title, WIDTH, HEIGHT);
 		
 	}
 
