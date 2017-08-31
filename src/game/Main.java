@@ -1,11 +1,16 @@
 package game;
 
+import display.Display;
+
 public class Main {
 
+	static Display widthGetter;
+	
+	
 	public static void main(String[] args) {
 		
-
-		new Game("fixed title finally ", 500, 500);
+		Game threadManager = new Game();
+		threadManager.startThread();
 		
 		
 	}
