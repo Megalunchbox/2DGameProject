@@ -1,4 +1,5 @@
 # 2DGameProject
-Just some testing with the 2d api, i am learning lol. If anyone new like me wants to help feel free to submit a pull request
 
-I won't judge if your code isn't that great if you don't judge mine k. Currently im going to actually get this setup before i allow pull requests but thanks!
+2DGameProject is a project to create a sort of sandbox game (like terraria or starbound) but with a more clear objective, obviously it won't be perfect because it's my first game but its a start. 
+
+If any other beginners want to submit a pull request - create your own branch i'll review it and open it, depending on whether it fits what i am doing.
