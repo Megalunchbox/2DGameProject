@@ -10,13 +10,8 @@ import javax.swing.JFrame;
 public class Display {
 
 	private JFrame display;
-<<<<<<< HEAD:src/display/Display.java
 	private int width, height;
 	private String title = "test";
-=======
-	final int width, height;
-	public String title;
->>>>>>> origin/master:src/game/Display.java
 	private Canvas displaycanvas;
 	
 	
@@ -27,7 +22,6 @@ public class Display {
 	
 	
 	
-<<<<<<< HEAD:src/display/Display.java
 	
 	public int getWidth(int width) {
 		
@@ -40,14 +34,6 @@ public class Display {
 		
 		this.height = height;
 		return width;
-=======
-	public Display(String title, int WIDTH, int HEIGHT) {
-		
-		this.WIDTH = WIDTH;
-		this.HEIGHT = HEIGHT;
-		this.title = title;
-		createDisplay();
->>>>>>> origin/master:src/game/Display.java
 		
 	}
 	
@@ -68,15 +54,15 @@ public class Display {
 		getHeight(500);
 		
 		display = new JFrame(title);
-		display.setSize(WIDTH, HEIGHT);
+		display.setSize(width, height);
 		display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		display.setResizable(false);
 		display.setLocationRelativeTo(null);
 		display.setVisible(true);
 		displaycanvas  = new Canvas();
-		displaycanvas.setPreferredSize(new Dimension(WIDTH,HEIGHT));
-		displaycanvas.setMinimumSize(new Dimension(WIDTH,HEIGHT));
-		displaycanvas.setMaximumSize(new Dimension(WIDTH,HEIGHT));
+		displaycanvas.setPreferredSize(new Dimension(width,height));
+		displaycanvas.setMinimumSize(new Dimension(width,height));
+		displaycanvas.setMaximumSize(new Dimension(width,height));
 		
 		display.add(displaycanvas);
 		display.pack();
