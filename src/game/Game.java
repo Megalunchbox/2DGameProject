@@ -2,19 +2,18 @@ package game;
 
 public class Game implements Runnable{
 
-	public int width, height;
+	public final int WIDTH, HEIGHT;
 	private Thread gameThread;
 	public String threadname;
 	boolean program_running;
 	
-	public Game(String title, int width, int height) {
+	public Game(String title, final int WIDTH, final int HEIGHT) {
 		
-		this.width = width;
-		this.height = height;
+		this.WIDTH = WIDTH;
+		this.HEIGHT = HEIGHT;
 		
 		@SuppressWarnings("unused")
-		Display displayer = new Display(title, width, height);
-		// it is used >:(
+		Display displayer = new Display(title, WIDTH, HEIGHT);
 		
 	}
 
@@ -41,6 +40,8 @@ public synchronized void stopThread() {
 		gameThread.join();
 	} catch (InterruptedException e) {
 		e.printStackTrace();
+		System.out.println("main thread exception!");
+		gameThread.sleep(1000);
 	}
 	
 	
