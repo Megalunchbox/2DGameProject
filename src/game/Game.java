@@ -7,7 +7,7 @@ public class Game implements Runnable{
 	public String threadname;
 	boolean program_running;
 	
-	public Game(String title, int width, int height) {
+	public Game(String title, final int width, final int height) {
 		
 		this.width = width;
 		this.height = height;
