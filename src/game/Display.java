@@ -1,5 +1,8 @@
 package game;
 
+import java.awt.Canvas;
+import java.awt.Dimension;
+
 import javax.swing.JFrame;
 
 public class Display {
@@ -7,6 +10,10 @@ public class Display {
 	private JFrame display;
 	int width, height;
 	String title;
+	private Canvas displaycanvas;
+	
+	
+	
 	
 	public Display(String title, int width, int height) {
 		
@@ -25,6 +32,12 @@ public class Display {
 		display.setResizable(false);
 		display.setLocationRelativeTo(null);
 		display.setVisible(true);
+		displaycanvas  = new Canvas();
+		displaycanvas.setPreferredSize(new Dimension(width,height));
+		displaycanvas.setMinimumSize(new Dimension(width,height));
+		displaycanvas.setMaximumSize(new Dimension(width,height));
+		
+		
 		
 	}
 	
