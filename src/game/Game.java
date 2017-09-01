@@ -2,9 +2,11 @@ package game;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 import java.awt.*;
 
 import display.Display;
+import textures.ImageLoad;
 
 public class Game implements Runnable{
 
@@ -16,7 +18,7 @@ public class Game implements Runnable{
 	Display displayer = new Display();
 	private BufferStrategy bs;
 	private Graphics g;
-	
+	private BufferedImage testImage;
 	
 	
 	
@@ -69,7 +71,7 @@ private void render() {
 	 
 	  g.setColor(Color.red);
 	 g.fillRect(10,10,100,100);
-	 
+	 g.drawImage(testImage, 20, 20 , null);
 	 bs.show();
 	 g.dispose();
 }
@@ -79,6 +81,7 @@ private void init() {
 	
 	
 	displayer.Displayer();
+	testImage = ImageLoad.imageLoader("sky.png");
 }
 
 private void tick() {

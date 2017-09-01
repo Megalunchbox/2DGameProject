@@ -12,7 +12,6 @@ import javax.swing.JFrame;
 public class Display {
 
 	private JFrame display;
-	private int width, height;
 	private String title = "test";
 	private Canvas displaycanvas;
 	
@@ -53,8 +52,8 @@ public class Display {
 	
 	private void createDisplay() {
 		
-		int height = getWidth();
-		int width = getHeight();
+		final int height = getWidth();
+		final int width = getHeight();
 		
 		display = new JFrame(title);
 		display.setSize(width, height);

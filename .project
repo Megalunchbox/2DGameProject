@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>tempTextures</name>
+			<type>2</type>
+			<location>C:/Users/megal/Desktop/tempTextures</location>
+		</link>
+	</linkedResources>
 </projectDescription>
