@@ -1,15 +1,15 @@
-package game;
+package game.Thread;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.*;
-import display.CanvasLoader;
-import textures.ImageLoad;
+import gfx.Display.CanvasLoader;
+import gfx.ImageManager.ImageLoad;
 
 
 
-public class threads implements Runnable{
+public class GameThread implements Runnable{
 
     public int width, height;
     private Thread gameThread;
@@ -28,14 +28,13 @@ public class threads implements Runnable{
     public void run() {
         System.out.println("method run initiated");
         init();
-        while(program_running)
-        {
+        while (program_running) {
             tick();
             render();
-
+            stopThread();
         }
 
-
+    }
 
 
 
@@ -101,7 +100,6 @@ public class threads implements Runnable{
         g = bs.getDrawGraphics();
 
         g.setColor(Color.red);
-        g.fillRect(10,10,100,100);
         g.drawImage(testImage, 20, 20 , null);
         bs.show();
         g.dispose();
@@ -117,7 +115,8 @@ public class threads implements Runnable{
 
 
         displayer.Displayer();
-        testImage = ImageLoad.imageLoader("sky.png");
+       testImage = ImageLoad.imageLoader("/textures/sky.png");
+
     }
 
 

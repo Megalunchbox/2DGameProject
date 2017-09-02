@@ -1,14 +1,15 @@
-package display;
+package gfx.Display;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
 import javax.swing.JFrame;
 
+
 public class CanvasLoader {
 
 
     private JFrame display;
-    private String title = "test";
+    private String title = "2DGameProject - indev ";
     private Canvas displaycanvas;
 
 
@@ -17,11 +18,11 @@ public class CanvasLoader {
         return displaycanvas;
     }
     public int getWidth() {
-        int width = 500;
+        int width = 1280;
         return width;
     }
     public int getHeight() {
-        int height = 500;
+        int height = 720;
         return height;
     }
     public String getTitle() {
@@ -31,10 +32,10 @@ public class CanvasLoader {
         createDisplay();
         System.out.println("Display created from display.Display");
     }
-
     private void createDisplay() {
-        final int height = getWidth();
-        final int width = getHeight();
+        final int height = getHeight();
+
+        final int width = getWidth();
         display = new JFrame(title);
         display.setSize(width, height);
         display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

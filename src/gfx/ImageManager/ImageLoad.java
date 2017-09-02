@@ -1,4 +1,4 @@
-package display;
+package gfx.ImageManager;
 
 import com.sun.javafx.iio.ImageLoader;
 import javax.imageio.ImageIO;
@@ -10,9 +10,9 @@ public class ImageLoad {
     public static BufferedImage imageLoader(String path) {
 
         try {
-            return ImageIO.read(ImageLoader.class.getResource(path));
+            return ImageIO.read(ImageLoad.class.getResource(path));
         } catch (IOException e) {
-            System.out.println("Error loading image:");
+            System.out.println("Error loading image");
             e.printStackTrace();
             System.exit(1);
         }
