@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 import java.awt.*;
 import gfx.Display.CanvasLoader;
 import gfx.ImageManager.ImageLoad;
-
+import gfx.ImageManager.SpriteSheet;
 
 
 public class GameThread implements Runnable{
@@ -20,8 +20,8 @@ public class GameThread implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
     private BufferedImage testImage;
-
-
+    private BufferedImage testImage2;
+    private SpriteSheet sheet;
 
 
 
@@ -100,7 +100,7 @@ public class GameThread implements Runnable{
         g = bs.getDrawGraphics();
 
         g.setColor(Color.red);
-        g.drawImage(testImage, 20, 20 , null);
+        g.drawImage(sheet.crop(0, 0, 32, 32), 20, 20 , null);
         bs.show();
         g.dispose();
     }
@@ -116,6 +116,8 @@ public class GameThread implements Runnable{
 
         displayer.Displayer();
        testImage = ImageLoad.imageLoader("/textures/sky.png");
+        testImage2 = ImageLoad.imageLoader("/textures/blocksheet.png");
+        sheet = new SpriteSheet(testImage2);
 
     }
 
