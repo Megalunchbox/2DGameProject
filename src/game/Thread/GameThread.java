@@ -4,6 +4,10 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.*;
+
+import game.States.GameState;
+import game.States.State;
+import gfx.Assets.Assets;
 import gfx.Display.CanvasLoader;
 import gfx.ImageManager.ImageLoad;
 import gfx.ImageManager.SpriteSheet;
@@ -19,21 +23,46 @@ public class GameThread implements Runnable{
     CanvasLoader displayer = new CanvasLoader();
     private BufferStrategy bs;
     private Graphics g;
-    private BufferedImage testImage;
-    private BufferedImage testImage2;
     private SpriteSheet sheet;
+    private State gameState; // determines if the game is on main menu, settings, or playing.
 
 
 
     public void run() {
         System.out.println("method run initiated");
-        init();
-        while (program_running) {
-            tick();
-            render();
-            stopThread();
-        }
 
+        init(); //initializes the game from the init method
+
+        int fps = 60;
+        double tps = 1000000000 / fps;
+        double delta = 0;
+        long now;
+        long lastTime = System.nanoTime();
+        long timer = 0;
+        int ticks = 0;
+
+        while (program_running) {
+            now = System.nanoTime();
+            delta += (now - lastTime) / tps;
+            timer += now - lastTime;
+            lastTime = now;
+
+            if (delta >= 1) {
+                tick();
+                render();
+                stopThread();
+                ticks++;
+                delta--;
+            }
+            if (timer >= 1000000000) {
+                ticks = 0;
+                timer = 0;
+
+            }
+
+            stopThread();
+
+        }
     }
 
 
@@ -85,24 +114,12 @@ public class GameThread implements Runnable{
 
     private void render() {
 
-        displayer.getHeight();
-        displayer.getWidth();
+        if (State.getState() != null) {
 
+            State.getState().render(g, displayer, bs);
 
-
-
-        bs = displayer.getCanvas().getBufferStrategy();
-        if (bs == null){
-
-            displayer.getCanvas().createBufferStrategy(3);
-            return;
         }
-        g = bs.getDrawGraphics();
 
-        g.setColor(Color.red);
-        g.drawImage(sheet.crop(0, 0, 32, 32), 20, 20 , null);
-        bs.show();
-        g.dispose();
     }
 
 
@@ -113,24 +130,23 @@ public class GameThread implements Runnable{
 
     private void init() {
 
+        gameState = new GameState();
+        State.setState(gameState);
+
 
         displayer.Displayer();
-       testImage = ImageLoad.imageLoader("/textures/sky.png");
-        testImage2 = ImageLoad.imageLoader("/textures/blocksheet.png");
-        sheet = new SpriteSheet(testImage2);
+        int test1 = 0;
+        Assets.init();
 
     }
 
-
-
-
-
-
-
-
     private void tick() {
 
+    if (State.getState() != null) {
 
+        State.getState().tick();
+
+    }
 
 
     }
