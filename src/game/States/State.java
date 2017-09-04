@@ -1,7 +1,6 @@
 package game.States;
 
 import gfx.Display.CanvasLoader;
-
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 

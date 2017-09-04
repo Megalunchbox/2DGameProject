@@ -33,8 +33,8 @@ public class GameState extends State {
         g = bs.getDrawGraphics();
 
         g.setColor(Color.red);
-        g.fillArc(100, 100, 100, 150, 10, 160);
-        g.fillArc(160, 170, 170, 150, 10, 160);
+        g.fill3DRect(100, 100, 100, 100, false);
+
 
 
         bs.show();

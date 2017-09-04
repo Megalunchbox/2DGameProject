@@ -4,8 +4,8 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.*;
-
 import game.States.GameState;
+import game.States.MenuState;
 import game.States.State;
 import gfx.Assets.Assets;
 import gfx.Display.CanvasLoader;
@@ -25,7 +25,7 @@ public class GameThread implements Runnable{
     private Graphics g;
     private SpriteSheet sheet;
     private State gameState; // determines if the game is on main menu, settings, or playing.
-
+    private State menuState;
 
 
     public void run() {
@@ -58,7 +58,7 @@ public class GameThread implements Runnable{
                 ticks = 0;
                 timer = 0;
 
-            }
+        }
 
             stopThread();
 
@@ -114,6 +114,15 @@ public class GameThread implements Runnable{
 
     private void render() {
 
+        bs = displayer.getCanvas().getBufferStrategy();
+        if (bs == null) {
+
+            displayer.getCanvas().createBufferStrategy(3);
+            return;
+        }
+        g = bs.getDrawGraphics();
+
+
         if (State.getState() != null) {
 
             State.getState().render(g, displayer, bs);
@@ -130,8 +139,9 @@ public class GameThread implements Runnable{
 
     private void init() {
 
+        menuState = new MenuState();
         gameState = new GameState();
-        State.setState(gameState);
+        State.setState(menuState);
 
 
         displayer.Displayer();
