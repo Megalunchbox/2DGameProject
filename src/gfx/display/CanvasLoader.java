@@ -9,11 +9,11 @@ public class CanvasLoader {
 
 
     private JFrame display;
-    private String title = "2DGameProject - indev ";
+    private String title = "Latere Mortis";
     private Canvas displaycanvas;
 
 
-
+    public  JFrame getDisplay() {return display;}
     public Canvas getCanvas() {
         return displaycanvas;
     }

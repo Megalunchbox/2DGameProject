@@ -17,9 +17,9 @@ public static void init() {
 
     title = ImageLoad.imageLoader("/textures/title1.png");
     SpriteSheet sheet = new SpriteSheet(ImageLoad.imageLoader("/textures/blocksheet.png"));
-    image1 = sheet.crop(0, 0, width32x, height32x);
-    image2 = sheet.crop(width32x, 0, width32x, height32x);   //so multiply every time by 32.... not a hard concept
-    image3 = sheet.crop( width32x*2,0,  width32x, height32x);
+    image1 = sheet.crop(0, 0, width32x+1, height32x+1);
+    image2 = sheet.crop(width32x+1, 0, width32x+1, height32x+1);   //so multiply every time by 32.... not a hard concept
+    image3 = sheet.crop( width32x*2+1,0,  width32x+1, height32x+1);
 }
 
 
