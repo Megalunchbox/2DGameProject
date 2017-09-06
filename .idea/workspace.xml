@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebf26ead-0378-48bb-9742-ed0ed8374957" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/display/Display.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/Game.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/launcher/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/textures/ImageLoad.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Blocks/Stone/BaseStoneBrick.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/Math.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/States/MenuButton/Button.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/States/MenuButton/PlayButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/States/MenuButton/SettingsButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/game/States/GameState.class" afterPath="$PROJECT_DIR$/src/bin/game/States/GameState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/game/States/State.class" afterPath="$PROJECT_DIR$/src/bin/game/States/State.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/game/Thread/GameThread.class" afterPath="$PROJECT_DIR$/src/bin/game/Thread/GameThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/gfx/Assets/Assets.class" afterPath="$PROJECT_DIR$/src/bin/gfx/Assets/Assets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/gfx/Display/CanvasLoader.class" afterPath="$PROJECT_DIR$/src/bin/gfx/Display/CanvasLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/textures/blocksheet.png" afterPath="$PROJECT_DIR$/src/bin/textures/blocksheet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/textures/blocksheet.png" afterPath="$PROJECT_DIR$/src/textures/blocksheet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/textures/title1.png" afterPath="$PROJECT_DIR$/src/textures/title1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.eml" afterPath="$PROJECT_DIR$/src.eml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.classpath" afterPath="$PROJECT_DIR$/src/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blocks/Block.java" afterPath="$PROJECT_DIR$/src/Blocks/Block.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/States/MenuState.java" afterPath="$PROJECT_DIR$/src/game/States/MenuState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gfx/Assets/Assets.java" afterPath="$PROJECT_DIR$/src/gfx/Assets/Assets.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gfx/display/CanvasLoader.java" afterPath="$PROJECT_DIR$/src/gfx/display/CanvasLoader.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/src/bin/" />
@@ -24,43 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CanvasLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gfx/display/CanvasLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/launcher/Launcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/.project">
+      <file leaf-file-name="GameThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Thread/GameThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="threads.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/threads.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +51,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gfx/ImageLoad.java">
+      <file leaf-file-name="MenuState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/States/MenuState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseStoneBrick.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Blocks/Stone/BaseStoneBrick.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Math.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Block.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blocks/Block.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CanvasLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gfx/Display/CanvasLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-80">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assets.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gfx/Assets/Assets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="67" lean-forward="true" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,6 +127,14 @@
         <option value="FxmlFile" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\game</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -111,21 +158,44 @@
         <option value="$PROJECT_DIR$/src/display/CanvasLoader.java" />
         <option value="$PROJECT_DIR$/src/display/ImageLoad.java" />
         <option value="$PROJECT_DIR$/src/gfx/display/CanvasLoader.java" />
-        <option value="$PROJECT_DIR$/src/game/threads.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/gfx/ImageLoad.java" />
+        <option value="$PROJECT_DIR$/src/game/game/threads.java" />
+        <option value="$PROJECT_DIR$/src/game/Thread/threads.java" />
+        <option value="$PROJECT_DIR$/src/gfx/display/ImageManager/ImageLoad.java" />
+        <option value="$PROJECT_DIR$/src/gfx/display/Display/CanvasLoader.java" />
+        <option value="$PROJECT_DIR$/src/game/threads.java" />
         <option value="$PROJECT_DIR$/src/launcher/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/gfx/ImageManager/ImageLoad.java" />
+        <option value="$PROJECT_DIR$/src/gfx/ImageManager/SpriteSheet.java" />
+        <option value="$PROJECT_DIR$/src/gfx/Display/Render.java" />
+        <option value="$PROJECT_DIR$/src/game/States/GameState.java" />
+        <option value="$PROJECT_DIR$/src/game/Thread/GameThread.java" />
+        <option value="$PROJECT_DIR$/src/Entity/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Entity/Living/Living.java" />
+        <option value="$PROJECT_DIR$/src/game/States/State.java" />
+        <option value="$PROJECT_DIR$/src/gfx/Display/CanvasLoader.java" />
+        <option value="$PROJECT_DIR$/src/game/States/MenuButton/MenuButton.java" />
+        <option value="$PROJECT_DIR$/src/game/States/MenuButton/Button.java" />
+        <option value="$PROJECT_DIR$/src/game/States/MenuButton/SettingsButton.java" />
+        <option value="$PROJECT_DIR$/src/game/States/MenuButton/PlayButton.java" />
+        <option value="$PROJECT_DIR$/src/game/Math.java" />
+        <option value="$PROJECT_DIR$/src/gfx/Assets/Assets.java" />
+        <option value="$PROJECT_DIR$/src/game/States/MenuState.java" />
+        <option value="$PROJECT_DIR$/src/Blocks/Block.java" />
+        <option value="$PROJECT_DIR$/src/Blocks/Stone/BaseStoneBrick.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -139,8 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,38 +219,143 @@
             <path>
               <item name="3DGameProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="gfx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="3DGameProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="gfx" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gfx" type="462c0819:PsiDirectoryNode" />
+              <item name="Display" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gfx" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageManager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="3DGameProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="launcher" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="3DGameProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Production">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="gfx" type="cbb8eebc:String" user="gfx" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="Blocks" type="cbb8eebc:String" user="Blocks" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="States" type="cbb8eebc:String" user="States" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="Thread" type="cbb8eebc:String" user="Thread" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="3DGameProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="src" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="src" type="616d4139:PackageViewModuleNode" />
+              <item name="Blocks" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="src" type="616d4139:PackageViewModuleNode" />
+              <item name="game" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="src" type="616d4139:PackageViewModuleNode" />
+              <item name="gfx" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="src" type="616d4139:PackageViewModuleNode" />
+              <item name="gfx" type="1f31426a:PackageElementNode" />
+              <item name="Assets" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="3DGameProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="src" type="616d4139:PackageViewModuleNode" />
+              <item name="textures" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/launcher/Launcher.java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/launcher/Launcher.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\textures" />
+      <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\gfx\Display" />
+      <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\gfx\ImageManager" />
+      <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\game\Thread" />
       <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src" />
-      <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\gfx\display" />
-      <recent name="C:\Users\megal\Desktop\3DGameProject\3DGameProject\src\display" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,10 +370,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="Application.Launcher (1)">
     <configuration name="2DGameProject" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="launcher/main.java" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="src" />
+      <envs />
+    </configuration>
+    <configuration name="Launcher (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="launcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="launcher.Launcher" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -321,13 +513,15 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.2DGameProject" />
       <item index="1" class="java.lang.String" itemvalue="Application.Launcher" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Launcher (1)" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Launcher" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.Launcher (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
   </component>
@@ -346,20 +540,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767764" sideWeight="0.44375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33085898" sideWeight="0.54791665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33085898" sideWeight="0.45208332" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -369,112 +561,63 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.49164927" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gfx/Display/Render.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gfx/Display/Render.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gfx/Display/Render.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gfx/Display/Render.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gfx/Display/Render.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gfx/Display/Render.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="13" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gfx/display/CanvasLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gfx/ImageLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/threads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gfx/display/CanvasLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/threads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gfx/ImageLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/display/Display.java" />
-    <entry file="file://$PROJECT_DIR$/src/gfx/ImageLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx/display/ImageManager/ImageLoad.java" />
     <entry file="file://$PROJECT_DIR$/src/launcher/main.java" />
     <entry file="file://$PROJECT_DIR$/src/textures/grass.png">
       <provider selected="true" editor-type-id="images">
@@ -489,13 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gfx/ImageLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx/display/ImageManager/ImageLoad.java" />
     <entry file="file://$PROJECT_DIR$/src/launcher/main.java" />
     <entry file="file://$PROJECT_DIR$/src/textures/grass.png">
       <provider selected="true" editor-type-id="images">
@@ -517,12 +654,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/launcher/main.java" />
-    <entry file="file://$PROJECT_DIR$/src/textures/grass.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Game" />
+    <entry file="file://$PROJECT_DIR$/src/game/game" />
     <entry file="file://$PROJECT_DIR$/src/launcher/Main" />
     <entry file="file://$PROJECT_DIR$/src/launcher/launcher" />
     <entry file="file://$PROJECT_DIR$/bin/launcher/launcher" />
@@ -544,46 +676,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/launcher/programLauncher.java" />
     <entry file="file://$PROJECT_DIR$/src/launcher/main.java" />
-    <entry file="file://$PROJECT_DIR$/src/gfx/ImageLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/threads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.project">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="1387" column="0" lean-forward="false" selection-start-line="1387" selection-start-column="0" selection-end-line="1387" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher.java">
+    <entry file="file://$PROJECT_DIR$/src/gfx/display/ImageManager/ImageLoad.java" />
+    <entry file="file://$PROJECT_DIR$/src/gfx/display/Display/CanvasLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/textures/grass.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="748">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gfx/display/CanvasLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/gfx/Display/Render.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="140">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,8 +718,153 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/launcher/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/States/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx/ImageManager/SpriteSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Living/Living.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/States/MenuButton/MenuButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/game/States/MenuButton/PlayButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/States/MenuButton/SettingsButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/States/MenuButton/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx/ImageManager/ImageLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/States/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx/Display/CanvasLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx/Assets/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="67" lean-forward="true" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/States/MenuState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Thread/GameThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Stone/BaseStoneBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -654,7 +925,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20229885" />
+                <option value="0.2" />
                 <option value="0.6" />
               </list>
             </option>
