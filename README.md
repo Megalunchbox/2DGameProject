@@ -8,4 +8,4 @@ If any other beginners want to submit a pull request - create your own branch i'
 Members of the project: Dabeast192, Daporkchop_ 
 
 
-Close to alpha stage
+- might abandon this project and start working with the libgdx library on a 2d or 3d game.
